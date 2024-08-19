@@ -1,46 +1,125 @@
-# Getting Started with Create React App
+Movie List Application
+======================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React TypeScript application that lists popular movies using The Movie Database (TMDB) API. The application features search functionality, pagination, and movie detail navigation. It uses Redux for state management and React Bootstrap for styling.
 
-## Available Scripts
+Features
+--------
 
-In the project directory, you can run:
+*   **Popular Movies List**: Displays a list of popular movies.
+    
+*   **Search**: Allows users to search for movies by title.
+    
+*   **Pagination**: Paginates the movie list, displaying 10 movies per page.
+    
+*   **Movie Details**: Click on a movie to navigate to its details page.
+    
 
-### `npm start`
+Prerequisites
+-------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before running this application, make sure you have the following installed:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*   **Node.js** (v14.x or higher)
+    
+*   **npm** (v6.x or higher) or **yarn** (v1.x or higher)
+    
 
-### `npm test`
+Getting Started
+---------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these instructions to set up and run the project locally.
 
-### `npm run build`
+### 1\. Clone the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codegit clone https://github.com/your-username/movie-list-app.git  cd movie-list-app   `
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2\. Install Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install the project dependencies using npm or yarn:
 
-### `npm run eject`
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codenpm install  # or  yarn install   `
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 3\. Set Up TMDB API Key
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You need a TMDB API key to fetch movies from The Movie Database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1.  Go to TMDB API and sign up to get your API key.
+    
+2.  Create a .env file in the root directory of your project.
+    
+3.  bashCopy codeREACT\_APP\_TMDB\_API\_KEY=your\_api\_key\_here
+    
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 4\. Run the Application
 
-## Learn More
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codenpm start  # or  yarn start   `
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application will be available at http://localhost:3000.
+
+### 5\. Build the Application for Production
+
+To create a production build of the application, run:
+
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codenpm run build  # or  yarn build   `
+
+The optimized production build will be available in the build directory.
+
+Project Structure
+-----------------
+
+Here's a brief overview of the project's folder structure:
+
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codesrc/  │  ├── app/  │   └── store.ts          # Redux store configuration  ├── features/  │   └── movies/  │       ├── MovieList.tsx  # Component for listing movies  │       ├── MovieSearch.tsx  # Component for searching movies  │       ├── MovieDetail.tsx  # Component for movie details  │       └── movieSlice.ts  # Redux slice for managing movie state  ├── App.tsx               # Main app component  └── index.tsx             # Entry point of the application   `
+
+### Key Files and Directories
+
+*   **app/store.ts**: Configures the Redux store.
+    
+*   **features/movies/**: Contains the main components and Redux slice for managing movies.
+    
+*   **MovieList.tsx**: Displays the list of movies with pagination.
+    
+*   **MovieSearch.tsx**: Provides the search functionality.
+    
+*   **MovieDetail.tsx**: Shows detailed information about a selected movie.
+    
+*   **movieSlice.ts**: Contains the Redux logic for fetching and storing movies.
+    
+
+Usage
+-----
+
+*   **Search Movies**: Use the search bar to find movies by title.
+    
+*   **Pagination**: Navigate through pages using the pagination controls.
+    
+*   **Movie Details**: Click on any movie to view more details.
+    
+
+Technologies Used
+-----------------
+
+*   **React**: JavaScript library for building user interfaces.
+    
+*   **TypeScript**: Superset of JavaScript that adds static types.
+    
+*   **Redux**: State management library.
+    
+*   **React Redux**: Official React bindings for Redux.
+    
+*   **React Bootstrap**: Bootstrap components built with React.
+    
+*   **Axios**: Promise-based HTTP client for making API requests.
+    
+*   **React Router**: Library for routing in React applications.
+    
+
+License
+-------
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+With this README.md, users will have a clear guide on how to set up, run, and understand the structure and functionality of your movie list application.
