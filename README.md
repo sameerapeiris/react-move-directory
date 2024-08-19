@@ -32,30 +32,25 @@ Follow these instructions to set up and run the project locally.
 
 ### 1\. Clone the Repository
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codegit clone https://github.com/your-username/movie-list-app.git  cd movie-list-app   `
+`bashCopy codegit clone https://github.com/your-username/movie-list-app.git  cd movie-list-app   `
 
 ### 2\. Install Dependencies
 
 Install the project dependencies using npm or yarn:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codenpm install  # or  yarn install   `
+` npm install  # or  yarn install   `
 
 ### 3\. Set Up TMDB API Key
 
-You need a TMDB API key to fetch movies from The Movie Database.
+You need a TMDB API key to fetch movies from The Movie Database.(Project included my API key for demo purposes)
 
-1.  Go to TMDB API and sign up to get your API key.
-    
-2.  Create a .env file in the root directory of your project.
-    
-3.  bashCopy codeREACT\_APP\_TMDB\_API\_KEY=your\_api\_key\_here
-    
+Go to TMDB API and sign up to get your API key. 
 
 ### 4\. Run the Application
 
 Start the development server:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codenpm start  # or  yarn start   `
+`   bashCopy codenpm start  # or  yarn start   `
 
 The application will be available at http://localhost:3000.
 
@@ -63,22 +58,15 @@ The application will be available at http://localhost:3000.
 
 To create a production build of the application, run:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codenpm run build  # or  yarn build   `
+`   bashCopy codenpm run build  # or  yarn build   `
 
 The optimized production build will be available in the build directory.
-
-Project Structure
------------------
-
-Here's a brief overview of the project's folder structure:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codesrc/  │  ├── app/  │   └── store.ts          # Redux store configuration  ├── features/  │   └── movies/  │       ├── MovieList.tsx  # Component for listing movies  │       ├── MovieSearch.tsx  # Component for searching movies  │       ├── MovieDetail.tsx  # Component for movie details  │       └── movieSlice.ts  # Redux slice for managing movie state  ├── App.tsx               # Main app component  └── index.tsx             # Entry point of the application   `
 
 ### Key Files and Directories
 
 *   **app/store.ts**: Configures the Redux store.
     
-*   **features/movies/**: Contains the main components and Redux slice for managing movies.
+*   **components/features/movies/**: Contains the main components and Redux slice for managing movies.
     
 *   **MovieList.tsx**: Displays the list of movies with pagination.
     
