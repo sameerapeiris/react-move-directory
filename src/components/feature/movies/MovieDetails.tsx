@@ -4,8 +4,8 @@ import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
 import Loader from "../../layout/loader/Loader";
 
-const API_KEY = "e751164f5cc2d4cc22838d1d0f8bdbde"; 
-const BASE_URL = "https://api.themoviedb.org/3";
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 interface Movie {
   id: number;
