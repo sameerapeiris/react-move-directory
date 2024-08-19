@@ -32,7 +32,7 @@ Follow these instructions to set up and run the project locally.
 
 ### 1\. Clone the Repository
 
-`git clone https://github.com/sameerapeiris/react-move-directory.git  cd react-move-directory   `
+`git clone https://github.com/sameerapeiris/react-movie-directory.git  cd react-move-directory   `
 
 ### 2\. Install Dependencies
 
