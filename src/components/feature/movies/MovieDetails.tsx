@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
+import Loader from "../../layout/loader/Loader";
 
 const API_KEY = "e751164f5cc2d4cc22838d1d0f8bdbde"; 
 const BASE_URL = "https://api.themoviedb.org/3";
@@ -42,7 +43,7 @@ const MovieDetails: React.FC = () => {
     fetchMovieDetails();
   }, [id]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader/>;
   if (error) return <p>{error}</p>;
 
   if (!movie) return null;

@@ -10,6 +10,22 @@
     font-size: 2rem;
     margin-bottom: 2rem;
   }
+  .btn-primary{
+    background-color: $primary600;
+    border-color: $primary600;
+    &:hover{
+      background-color: $primary600;
+      border-color: $primary600;
+    }
+    &:active{
+      background-color: $primary600;
+      border-color: $primary600;
+    }
+    &:focus{
+      background-color: $primary600;
+      border-color: $primary600;
+    }
+  }
   &--wrap {
     .col-lg-2 {
       @include cmmq(992px){
@@ -48,6 +64,16 @@
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
+  }
+  &--search{
+   form{
+    >div{
+      width: 100%;
+      input{
+        width: 100%;
+      }
+    }
+   }
   }
   &--pagination {
     .pagination {

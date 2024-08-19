@@ -7,6 +7,7 @@ import { Col, Container, Image, Pagination, Row } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 import MovieSearch from "./MovieSearch";
 import { noPreview } from "../../../assert/img";
+import Loader from "../../layout/loader/Loader";
 
 const MovieList: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -57,7 +58,7 @@ const MovieList: React.FC = () => {
     return pageNumbers;
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader/>;
   if (error) return <p>Error: {error}</p>;
 
   return (
@@ -67,7 +68,7 @@ const MovieList: React.FC = () => {
           {" "}
           <h1 className="en-movies__list--header">All movies</h1>
         </Col>
-        <Col>
+        <Col className="en-movies__list--search">
           <MovieSearch onSearch={handleSearch} />
         </Col>
       </Row>

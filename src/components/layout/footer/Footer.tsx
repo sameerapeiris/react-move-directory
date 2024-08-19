@@ -1,12 +1,5 @@
 import React from "react";
-import { Col, Container, Form, FormControl, Image, Row } from "react-bootstrap";
-import MoveButton from "../../atoms/button/Button";
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaInstagramSquare,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import { Col, Container, Row } from "react-bootstrap";
 const Footer = () => {
   return (
     <>

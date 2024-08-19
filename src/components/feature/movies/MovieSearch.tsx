@@ -36,7 +36,7 @@ const MovieSearch: React.FC<MovieSearchProps> = ({ onSearch }) => {
           onChange={(e) => onChangeSearch(e)}
         />
       </Form.Group>
-      <MoveButton type="submit" variant="primary" className="me-2">
+      <MoveButton type="submit" variant="primary" className="ms-2">
         Search
       </MoveButton>
     </Form>

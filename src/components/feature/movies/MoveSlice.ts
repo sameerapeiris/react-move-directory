@@ -15,6 +15,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 export const fetchMovies = createAsyncThunk<MovieApiResponse, number>(
   "movies/fetchMovies",
   async (page: number = 1) => {
+    debugger
     const response = await axios.get<MovieApiResponse>(
      `${BASE_URL}/discover/movie?api_key=${API_KEY}&page=${page}`
     );

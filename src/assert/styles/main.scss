@@ -25,3 +25,16 @@ h1, h2, h3, h4, h5, h6{
 h2{
   font-size: 1.5rem;
 }
+.en-movie-loader-wrap {
+  position: absolute;
+  background-color: #6a0b9861;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 99999;
+  svg{
+    left: 50%;
+    position: absolute;
+    top: 45%;
+  }
+}

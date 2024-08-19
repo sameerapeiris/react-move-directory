@@ -6,7 +6,7 @@ This is a React TypeScript application that lists popular movies using The Movie
 Features
 --------
 
-*   **Popular Movies List**: Displays a list of popular movies.
+*   **Movies List**: Displays a list of  movies.
     
 *   **Search**: Allows users to search for movies by title.
     
@@ -32,7 +32,7 @@ Follow these instructions to set up and run the project locally.
 
 ### 1\. Clone the Repository
 
-`bashCopy codegit clone https://github.com/your-username/movie-list-app.git  cd movie-list-app   `
+`bashCopy codegit clone https://github.com/your-username/movie-list-app.git  cd react-move-directory   `
 
 ### 2\. Install Dependencies
 
@@ -105,9 +105,4 @@ Technologies Used
 *   **React Router**: Library for routing in React applications.
     
 
-License
--------
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-With this README.md, users will have a clear guide on how to set up, run, and understand the structure and functionality of your movie list application.
