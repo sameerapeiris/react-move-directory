@@ -54,6 +54,8 @@ Start the development server:
 
 The application will be available at http://localhost:3000.
 
+Demo purposes application has been hosted at https://mediumturquoise-mule-391827.hostingersite.com
+
 ### 5\. Build the Application for Production
 
 To create a production build of the application, run:
