@@ -1,0 +1,17 @@
+.en-movies__navbar {
+  background-color: $white;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $natural00;
+
+  .en-movies-logo {
+    max-width: 50px;
+  }
+  .logo-text {
+    color: $primary600;
+    font-size: 1.3rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    color: $natural600;
+  }
+}

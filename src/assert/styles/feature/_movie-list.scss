@@ -1,0 +1,76 @@
+.en-movies__list {
+  background-color: #fcf5ff;
+  padding: 2rem;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  border-radius: 1rem;
+  &--header {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  &--wrap {
+    .col-lg-2 {
+      width: 20%;
+    }
+  }
+  &--card {
+    margin-bottom: 3rem;
+    &-img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &-rating {
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      padding: 8px;
+      background-color: $warning100;
+      svg {
+        font-size: 2rem;
+        color: $warning;
+      }
+    }
+    &-title {
+      margin-top: 1.2rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    &-desc {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+  &--pagination {
+    .pagination {
+      place-content: center;
+      margin-top: 3rem;
+      .page-link {
+        color: $primary600;
+
+        &:focus {
+          background-color: $primary600;
+          color: $white;
+          border-color: $primary600;
+        }
+        &:hover {
+          background-color: $primary300;
+          color: $white;
+          border-color: $primary600;
+        }
+      }
+      .active {
+        .page-link {
+          background-color: $primary600;
+          color: $white;
+          border-color: $primary600;
+        }
+      }
+    }
+  }
+}
