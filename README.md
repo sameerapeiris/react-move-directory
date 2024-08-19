@@ -32,7 +32,7 @@ Follow these instructions to set up and run the project locally.
 
 ### 1\. Clone the Repository
 
-`bashCopy codegit clone https://github.com/your-username/movie-list-app.git  cd react-move-directory   `
+`git clone https://github.com/sameerapeiris/react-move-directory.git  cd react-move-directory   `
 
 ### 2\. Install Dependencies
 
@@ -50,7 +50,7 @@ Go to TMDB API and sign up to get your API key.
 
 Start the development server:
 
-`   bashCopy codenpm start  # or  yarn start   `
+` npm start  # or  yarn start   `
 
 The application will be available at http://localhost:3000.
 
@@ -58,7 +58,7 @@ The application will be available at http://localhost:3000.
 
 To create a production build of the application, run:
 
-`   bashCopy codenpm run build  # or  yarn build   `
+`npm run build  # or  yarn build   `
 
 The optimized production build will be available in the build directory.
 
