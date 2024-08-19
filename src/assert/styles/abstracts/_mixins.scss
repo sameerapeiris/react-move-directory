@@ -1,8 +1,5 @@
 
-@use './variables' as var;
-@function _rgba($color, $opacity: 1) {
-    @return unquote("rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$opacity})");
-}
+
 
 @mixin transition($time) {
     -webkit-transition: all $time linear 0s;
@@ -16,22 +13,6 @@
     -webkit-transform: $value;
     -ms-transform: $value;
     transform: $value;
-}
-
-
-@mixin placeholder {
-    &::-webkit-input-placeholder {
-		@content;
-    }
-    &:-moz-placeholder {
-        @content;
-    }
-    &::-moz-placeholder {
-        @content;
-    }
-    &:-ms-input-placeholder {
-        @content;
-    }
 }
 
 @mixin mq($value) {

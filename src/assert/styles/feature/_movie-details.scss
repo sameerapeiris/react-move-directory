@@ -1,0 +1,66 @@
+.en-movies__detail {
+  background-color: #6a0b98;
+  color: $white;
+
+  &-wrap {
+    background: rgb(106, 11, 152);
+    background: linear-gradient(
+      85deg,
+      rgba(106, 11, 152, 1) 0%,
+      rgba(106, 11, 152, 1) 22%,
+      rgba(106, 11, 152, 0.8183648459383753) 48%,
+      rgba(106, 11, 152, 1) 88%,
+      rgba(106, 11, 152, 1) 100%
+    );
+    padding: 3rem 2rem;
+  }
+  &--poster {
+    justify-content: start;
+    display: flex;
+    img {
+      max-width: 300px;
+    }
+  }
+  &--desc {
+    &-overlay {
+      .title {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .inner-text{
+        font-size: 1.1rem;
+      }
+      .overview {
+        max-width: 600px;
+        font-size: 1.1rem;
+        margin-top: 1.4rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &--btm{
+    margin-top: 4rem;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    min-height: 500px;
+    h2{
+        font-size: 2.5rem;
+    }
+    hr{
+        max-width: 80%;
+        @include mq(xs){
+            max-width: 100%;
+        }
+    }
+    .overview{
+        max-width: 80%;
+       
+        @include mq(xs){
+            max-width: 100%;
+        }
+    }
+  }
+}

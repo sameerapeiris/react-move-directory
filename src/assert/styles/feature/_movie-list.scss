@@ -4,6 +4,7 @@
   padding-left: 2rem !important;
   padding-right: 2rem !important;
   border-radius: 1rem;
+  margin-top: 4rem;
   &--header {
     font-weight: 600;
     font-size: 2rem;
@@ -11,7 +12,9 @@
   }
   &--wrap {
     .col-lg-2 {
-      width: 20%;
+      @include cmmq(992px){
+        width: 20%;
+      }
     }
   }
   &--card {

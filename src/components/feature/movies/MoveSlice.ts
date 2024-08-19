@@ -1,4 +1,3 @@
-// src/features/movies/movieSlice.ts
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { MoviesState, MovieApiResponse } from "./interfaces";
@@ -17,7 +16,7 @@ export const fetchMovies = createAsyncThunk<MovieApiResponse, number>(
   "movies/fetchMovies",
   async (page: number = 1) => {
     const response = await axios.get<MovieApiResponse>(
-     `${BASE_URL}/movie/popular?api_key=${API_KEY}&page=${page}`
+     `${BASE_URL}/discover/movie?api_key=${API_KEY}&page=${page}`
     );
     return response.data;
   }
